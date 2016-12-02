@@ -1,0 +1,6 @@
+<h1>{{ task.task_text }}</h1>
+<ul>
+{% for choice in task.completed_set.all %}
+    <li>{{ completed.status }}</li>
+{% endfor %}
+</ul>

@@ -1,0 +1,9 @@
+{% if latest_task_list %}
+    <ul>
+    {% for task in latest_task_list %}
+        <li><a href="/tasks/{{ task.id }}/">{{ task.task_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Tasks are Left!</p>
+{% endif %}
